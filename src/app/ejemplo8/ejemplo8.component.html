@@ -1,0 +1,15 @@
+<p>
+  Ejemplo : template reference
+</p>
+
+Numero1: <label>
+  <input #num1 type="text">
+</label>
+<br>
+Numero2: <label>
+  <input #num2 type="text">
+</label>
+<br>
+El resultado es: {{resultado}}
+<br>
+<button (click)="realizarSuma(num1.value,num2.value)">Sumar</button>

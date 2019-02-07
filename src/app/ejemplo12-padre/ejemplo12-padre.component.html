@@ -1,0 +1,11 @@
+<p>
+  Ejemplo12: Comunicacion entre componentes, en este ejemplo vamos a comunicar el padre con el hijo enviando desde el
+  padre un título y un color
+</p>
+
+<h3>Componente Padre</h3>
+<label>
+  <input type="text" [(ngModel)]="color">
+</label>
+
+<app-ejemplo12-hijo [colorPadre]="color" [nombrePadre]=" 'Jose' "></app-ejemplo12-hijo>

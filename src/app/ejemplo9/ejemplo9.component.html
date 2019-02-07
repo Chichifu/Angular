@@ -1,0 +1,18 @@
+<p>
+  Ejemplo9: Formulario
+</p>
+
+<form (ngSubmit)="onSubmit()">
+  <label for="nombre">Nombre:</label>
+  <label>
+    <input type="text" name='nombre' [(ngModel)]="nombre">
+  </label>
+
+  <label for="email">Email:</label>
+  <label>
+    <input type="email" name='mail' [(ngModel)]="email">
+  </label>
+  <br>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpiar">
+</form>

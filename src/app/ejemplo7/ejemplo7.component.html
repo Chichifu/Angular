@@ -1,0 +1,28 @@
+<p>
+  Ej 7 HTML y TS: Styles, class y attr bounds
+</p>
+
+<button style="color:red">Boton1</button>
+
+<button [style.color]=" 'blue' ">Boton</button>
+
+<button [style.color]=" miColor ">Boton</button>
+
+<button [style.color]=" getColor() ">Boton</button>
+
+<button [style.color]=" hayError() ? 'red' : 'blue'">Boton</button>
+
+<br/>
+
+<div class="bonito">Este es mi estilo</div>
+
+<div [class.bonito]="true">Este es mi estilo</div>
+
+<div [class.bonito]="ponerBonito()">Este es mi estilo</div>
+
+<br/>
+
+<button aria-label="Cerrar ventana">X</button>
+
+<button [attr.aria-label]="'Cerrar Ventana'">X</button>
+

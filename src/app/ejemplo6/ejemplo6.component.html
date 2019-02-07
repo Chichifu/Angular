@@ -1,0 +1,13 @@
+<p>
+  Property bound: enlazamos un calor del controaldor a una propieadad del tag
+</p>
+
+<div class="justify-content-center">
+  <img [width]="ancho"
+       src="https://vignette.wikia.nocookie.net/game-up/images/f/fd/Link.png/revision/latest/scale-to-width-down/490?cb=20130101075719&path-prefix=es"
+       alt="imagenGatito">
+</div>
+
+<br>
+<label for="customRange2">Selecciona tamaño {{ancho}}</label>
+<input type="range" class="custom-range" min="150" max="300" id="customRange2" [(ngModel)]="ancho">
