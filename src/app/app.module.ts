@@ -18,6 +18,9 @@ import {Ejemplo11Component} from './ejemplo11/ejemplo11.component';
 import {Ejemplo12PadreComponent} from './ejemplo12-padre/ejemplo12-padre.component';
 import {Ejemplo12HijoComponent} from './ejemplo12-hijo/ejemplo12-hijo.component';
 import {FormsModule} from '@angular/forms';
+import {Ejemplo13HijoComponent} from './ejemplo13-hijo/ejemplo13-hijo.component';
+import {Ejemplo13PadreComponent} from './ejemplo13-padre/ejemplo13-padre.component';
+import {MatButtonModule} from '@angular/material';
 
 
 const routes: Routes = [
@@ -33,8 +36,9 @@ const routes: Routes = [
   {path: 'ejemplo10', component: Ejemplo10Component},
   {path: 'ejemplo11', component: Ejemplo11Component},
   {path: 'ejemplo12-hijo', component: Ejemplo12HijoComponent},
-  {path: 'ejemplo12-padre', component: Ejemplo12PadreComponent}
-
+  {path: 'ejemplo12-padre', component: Ejemplo12PadreComponent},
+  {path: 'ejemplo13-hijo', component: Ejemplo13HijoComponent},
+  {path: 'ejemplo13-padre', component: Ejemplo13PadreComponent}
 ];
 
 @NgModule({
@@ -53,12 +57,15 @@ const routes: Routes = [
     Ejemplo10Component,
     Ejemplo11Component,
     Ejemplo12HijoComponent,
-    Ejemplo12PadreComponent
+    Ejemplo12PadreComponent,
+    Ejemplo13HijoComponent,
+    Ejemplo13PadreComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   exports: [RouterModule],
   providers: [],
